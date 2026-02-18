@@ -1,0 +1,78 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo azul escuro profundo com elementos digitais -->
+  <rect width="300" height="300" rx="40" fill="#020617"/>
+  
+  <!-- Grade de fundo digital -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#A855F7" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="300" height="300" fill="url(#grid)"/>
+  
+  <!-- Elementos decorativos -->
+  <rect x="30" y="30" width="15" height="15" fill="#A855F7" opacity="0.3"/>
+  <rect x="255" y="35" width="15" height="15" fill="#22D3EE" opacity="0.3"/>
+  <rect x="35" y="255" width="15" height="15" fill="#22D3EE" opacity="0.3"/>
+  <rect x="250" y="250" width="15" height="15" fill="#A855F7" opacity="0.3"/>
+  
+  <!-- Pontos de circuito brilhantes -->
+  <circle cx="60" cy="60" r="3" fill="#22D3EE" opacity="0.8"/>
+  <circle cx="240" cy="60" r="3" fill="#A855F7" opacity="0.8"/>
+  <circle cx="60" cy="240" r="3" fill="#A855F7" opacity="0.8"/>
+  <circle cx="240" cy="240" r="3" fill="#22D3EE" opacity="0.8"/>
+  
+  <!-- Linhas de circuito -->
+  <path d="M 60 60 L 100 60 L 100 100 L 140 100" stroke="#22D3EE" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 240 60 L 200 60 L 200 100 L 160 100" stroke="#A855F7" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 60 240 L 100 240 L 100 200 L 140 200" stroke="#A855F7" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 240 240 L 200 240 L 200 200 L 160 200" stroke="#22D3EE" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Texto 8Tech principal -->
+  <g transform="translate(150, 160)">
+    <!-- 8 -->
+    <text x="-80" y="15" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="url(#techGradient)" text-anchor="middle">8</text>
+    
+    <!-- Tech -->
+    <text x="60" y="15" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="url(#techGradient)" text-anchor="middle">Tech</text>
+    
+    <!-- Circuitos nos caracteres -->
+    <path d="M -120 10 L -110 10 L -110 0 L -100 0" stroke="#22D3EE" stroke-width="2" fill="none" opacity="0.8"/>
+    <circle cx="-100" cy="0" r="3" fill="#22D3EE"/>
+    
+    <path d="M -50 10 L -40 10 L -40 20 L -30 20" stroke="#22D3EE" stroke-width="2" fill="none" opacity="0.8"/>
+    <circle cx="-30" cy="20" r="3" fill="#22D3EE"/>
+    
+    <path d="M 20 10 L 30 10 L 30 0 L 40 0" stroke="#22D3EE" stroke-width="2" fill="none" opacity="0.8"/>
+    <circle cx="40" cy="0" r="3" fill="#22D3EE"/>
+    
+    <path d="M 100 10 L 110 10 L 110 20 L 120 20" stroke="#22D3EE" stroke-width="2" fill="none" opacity="0.8"/>
+    <circle cx="120" cy="20" r="3" fill="#22D3EE"/>
+  </g>
+  
+  <!-- Gradiente metálico -->
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E9D5FF;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#C084FC;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#A855F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333EA;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Efeito de brilho -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Aplicar efeitos -->
+  <style>
+    text {
+      filter: url(#glow);
+    }
+  </style>
+</svg>
