@@ -1,16 +1,26 @@
-# React + Vite
+# 8Tech Website 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descrição
+Site oficial da **8Tech - Soluções Tecnológicas Inovadoras**, desenvolvido para apresentar a empresa, seus serviços e canais de contato.  
+O projeto possui duas versões:
+- **Site HTML/CSS/JS** (funcional e pronto para uso).
+- **Projeto Blazor WebAssembly** (em desenvolvimento).
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologias Utilizadas
+- HTML5, CSS3, JavaScript
+- Blazor WebAssembly (.NET 8)
+- Bootstrap 5
+- Google Fonts (Inter)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 Características
+- Design moderno com gradientes neon (#9333EA, #EC4899, #06B6D4).
+- Tema **dark tech** com fundos escuros (#0F172A, #1E293B).
+- Layout responsivo para desktop e mobile.
+- Animações e transições suaves.
+- Identidade visual própria da 8Tech.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Versão Blazor (Em desenvolvimento)
+1. Corrigir erros de compilação.
+2. Executar:
+   ```bash
+   dotnet run
